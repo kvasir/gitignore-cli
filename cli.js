@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 'use strict';
 var meow = require('meow');
-var <%= camelModuleName %> = require('./');
+var gitignoreCli = require('./');
 
 var cli = meow([
 	'Usage',
-	'  $ <%= moduleName %> [input]',
+	'  $ gitignore-cli [input]',
 	'',
 	'Options',
 	'  --foo  Lorem ipsum. [Default: false]',
 	'',
 	'Examples',
-	'  $ <%= moduleName %>',
+	'  $ gitignore-cli',
 	'  unicorns & rainbows',
-	'  $ <%= moduleName %> ponies',
+	'  $ gitignore-cli ponies',
 	'  ponies & rainbows'
 ]);
 
-console.log(<%= camelModuleName %>(cli.input[0] || 'unicorns'));
+console.log(gitignoreCli(cli.input[0] || 'unicorns'));
