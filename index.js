@@ -1,10 +1,19 @@
 'use strict';
-module.exports = function (str, opts) {
-	if (typeof str !== 'string') {
-		throw new TypeError('Expected a string');
+module.exports = function (params, opts) {
+	var http = require('https');
+	var fs = require('fs');
+	var baseUrl = 'https://www.gitignore.io/api/';
+	var dest = './.test-gitignore';
+
+	var download = function(url, dest, cb) {
+	  var file = fs.createWriteStream(dest);
+	  var request = http.get(url, function(response) {
+	    response.pipe(file);
+	    file.on('finish', function() {
+	      file.close(cb);
+	    });
+	  });
 	}
 
-	opts = opts || {};
-
-	return str + ' & ' + (opts.postfix || 'rainbows');
+	download(baseUrl + params, dest);
 };

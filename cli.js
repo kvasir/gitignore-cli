@@ -5,16 +5,16 @@ var gitignoreCli = require('./');
 
 var cli = meow([
 	'Usage',
-	'  $ gitignore-cli [input]',
+	'  $ gitignore-cli [params]',
 	'',
 	'Options',
-	'  --foo  Lorem ipsum. [Default: false]',
+	'  ',
 	'',
 	'Examples',
-	'  $ gitignore-cli',
-	'  unicorns & rainbows',
-	'  $ gitignore-cli ponies',
-	'  ponies & rainbows'
+	'  $ gitignore-cli java',
+	'  for one parameter',
+	'  $ gitignore-cli java node',
+	'  for > 1 parameter'
 ]);
 
-console.log(gitignoreCli(cli.input[0] || 'unicorns'));
+gitignoreCli(cli.input);
