@@ -1,28 +1,24 @@
-# <%= moduleName %> [![Build Status](https://travis-ci.org/<%= githubUsername %>/<%= moduleName %>.svg?branch=master)](https://travis-ci.org/<%= githubUsername %>/<%= moduleName %>)
+# gitignore-cli [![Build Status](https://travis-ci.org/kvasir/gitignore-cli.svg?branch=master)](https://travis-ci.org/kvasir/gitignore-cli)
 
 >
-
 
 ## Install
 
 ```
-$ npm install --save <%= moduleName %>
+$ npm install --save gitignore-cli
 ```
 
 
 ## Usage
 
 ```js
-const <%= camelModuleName %> = require('<%= moduleName %>');
+const <%= camelModuleName %> = require('gitignore-cli');
 
-<%= camelModuleName %>('unicorns');
-//=> 'unicorns & rainbows'
-```
 
 
 ## API
 
-### <%= camelModuleName %>(input, [options])
+### gitignore-cli(input, [options])
 
 #### input
 
@@ -43,26 +39,26 @@ Lorem ipsum.
 ## CLI
 
 ```
-$ npm install --global <%= moduleName %>
+$ npm install --global gitignore-cli
 ```
 
 ```
-$ <%= moduleName %> --help
+$ gitignore-cli --help
 
   Usage
-    <%= moduleName %> [input]
+    gitignore-cli [input]
 
   Options
     --foo  Lorem ipsum. [Default: false]
 
   Examples
-    $ <%= moduleName %>
+    $ gitignore-cli
     unicorns & rainbows
-    $ <%= moduleName %> ponies
+    $ gitignore-cli ponies
     ponies & rainbows
 ```
 
 
 ## License
 
-MIT © [<%= name %>](https://github.com/<%= githubUsername %>)
+MIT © [<%= name %>](https://github.com/kvasir/gitignore-cli)

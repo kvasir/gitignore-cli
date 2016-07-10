@@ -1,13 +1,13 @@
 {
-  "name": "<%= moduleName %>",
+  "name": "gitignore-cli",
   "version": "0.0.0",
   "description": "",
   "license": "MIT",
-  "repository": "<%= githubUsername %>/<%= moduleName %>",
+  "repository": "kvasir/gitignore-cli",
   "author": {
-    "name": "<%= name %>",
-    "email": "<%= email %>",
-    "url": "<%= website %>"
+    "name": "Kvasir",
+    "email": "",
+    "url": ""
   },
   "bin": "cli.js",
   "engines": {
