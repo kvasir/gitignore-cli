@@ -1,42 +1,8 @@
-# gitignore-cli [![Build Status](https://travis-ci.org/kvasir/gitignore-cli.svg?branch=master)](https://travis-ci.org/kvasir/gitignore-cli)
+# gitignore-cli
 
 >
 
 ## Install
-
-```
-$ npm install --save gitignore-cli
-```
-
-
-## Usage
-
-```js
-const <%= camelModuleName %> = require('gitignore-cli');
-
-
-
-## API
-
-### gitignore-cli(input, [options])
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
-
-
-## CLI
 
 ```
 $ npm install --global gitignore-cli
@@ -45,20 +11,23 @@ $ npm install --global gitignore-cli
 ```
 $ gitignore-cli --help
 
-  Usage
-    gitignore-cli [input]
+  Usage:
+    gitignore-cli [params]
 
-  Options
-    --foo  Lorem ipsum. [Default: false]
+  Examples:
+    $ gitignore-cli java
+	Creates .gitignore file for java
+    $ gitignore-cli java node    
+	Creates .gitignore file for java and node
 
-  Examples
-    $ gitignore-cli
-    unicorns & rainbows
-    $ gitignore-cli ponies
-    ponies & rainbows
 ```
 
+#### params
+
+Type: `array`
+
+Example: java node c
 
 ## License
 
-MIT © [<%= name %>](https://github.com/kvasir/gitignore-cli)
+MIT © [gitignore-cli] (https://github.com/kvasir/gitignore-cli)
